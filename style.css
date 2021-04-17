@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 14px;
+  background-color: #333;
+  color: #fff;
+  font-family: serif;
+}
+.wrapper {
+  min-height: 100%;
+}
+.page {
+  padding: 30px 0;
+
+}
+.page__container {
+  min-width: 800px;
+  margin: 0 auto;
+}
+.page__section {
+  padding: 30px;
+}
+.page__section_1 {
+  background-color: #288cdd;
+}
+.page__section_2 {
+  background-color: #7a956b;
+}
+.page__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.page__text {
+  font-size: 16px;
+  line-height: 150%;
+}
+.page__text *:last-child {
+  margin-bottom: 0;
+}
+.page__sub-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.page__images {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.page__image {
+  position: relative;
+  padding-bottom: 90%;
+  background: url("img/loadingDot.gif") center / 50px no-repeat;
+}
+.page__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
